@@ -52,5 +52,15 @@ int binary_tree_is_complete(const binary_tree_t *tree);
 binary_tree_t *binary_tree_rotate_left(binary_tree_t *tree);
 binary_tree_t *binary_tree_rotate_right(binary_tree_t *tree);
 binary_tree_t **resize_queue(binary_tree_t **queue, size_t *size);
+int binary_tree_is_bst(const binary_tree_t *tree);
+int is_bst_helper(const binary_tree_t *tree, int low, int high);
+bst_t *bst_insert(bst_t **tree, int value);
+bst_t *array_to_bst(int *array, size_t size);
+bst_t *bst_search(const bst_t *tree, int value);
+bst_t *bst_remove(bst_t *root, int value);
+bst_t *bst_remove_recursive(bst_t *root, bst_t *node, int value);
+bst_t *bst_delete(bst_t *root, bst_t *node);
+bst_t *inorder_successor(bst_t *root);
+
 
 #endif
